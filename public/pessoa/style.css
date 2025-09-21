@@ -1,0 +1,81 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333; 
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    min-height: 100vh;
+}
+
+h1, h2{
+    color: #1a77e8;
+    text-align: center;
+}
+
+.form-container, .list-container {
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+input, button{
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 8px 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /*Garante que padding e border sejam incluidos no tamanho total*/
+}
+
+button{
+    cursor: pointer;
+    background-color: #1a77e8;
+    color:white;
+    border: none;
+    transition: backgroud-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #155bb5;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+}
+
+button.delete-btn:hover{
+    background-color: #c82333;
+}
+
+#person-list li{
+    background-color: #e0ecef;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; /*Remove os marcadores de Lista*/
+    transition: transform 0.2s ease;
+}
+
+#person-list li:hover{
+    transform: translateY(-2px); /*Mover elemento 2px para cima*/
+}
+
+#person-list li span{
+    flex-grow: 1; /*Permite que o texto ocupe o espaço disponível*/
+    margin-right: 15px;
+}
+
+#person-list li div{
+    display: flex;
+    gap: 8px; /*Espaçamento entre os botões*/
+}
