@@ -54,18 +54,18 @@ button#cancel-btn:hover{
     background-color: #155bb5;
 }
 
-button.delete-btn { /* botão que o backend adicionará depois*/
+button.delete-btn { /* botão que o javascript adicionará depois*/
 background-color: #dc3545;
 }
-button.delete-btn:hover { /* botão que o backend adicionará depois*/
+button.delete-btn:hover { /* botão que o javascript adicionará depois*/
 background-color: #c82333;
 }
 
-button.edit-btn { /* botão que o backend adicionará depois*/
+button.edit-btn { /* botão que o javascript adicionará depois*/
 background-color: #ffc107;
 color: #333;
 }
-button.edit-btn:hover { /* botão que o backend adicionará depois*/
+button.edit-btn:hover { /* botão que o javascript adicionará depois*/
 background-color: #e0a800;
 }
 
