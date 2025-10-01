@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, '../public'))); // Serve arquivos es
 // Obter o pool de conexões do banco de dados
 const pool = db();
 
-// Importa e conecta as rotas do CRUD
+// Aqui no server.js, estamos chamando as funções que foram exportadas em cada arquivo
 require('./pessoa/create')(app, pool);
 require('./pessoa/read')(app, pool);
 require('./pessoa/update')(app, pool);
